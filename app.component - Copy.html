@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class="title">Custom Attribute Directive Example</h2>
+    <div class="input-container">
+      <input type="text" appHighlight="green" class="styled-input" placeholder="Focus on me!">
+    </div>
+  
+    <h2 class="title">Structural Directive Example</h2>
+    <div class="permission-container">
+      <p *appShowIfPermission="hasPermission" class="permission-text">
+        You have access to this content!
+      </p>
+    </div>
+  
+    <button class="toggle-btn" (click)="hasPermission = !hasPermission">Toggle Permission</button>
+  </div>
+  
+<app-parent></app-parent>
+<app-oneway></app-oneway>
+<app-twoway></app-twoway>
+<app-student-list></app-student-list>
+<app-stu-list></app-stu-list>
+
+<router-outlet />
