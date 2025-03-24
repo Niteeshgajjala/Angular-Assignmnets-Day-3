@@ -1,0 +1,32 @@
+<h2 class="student-title">Student List</h2>
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date of Birth</th>
+      <th>Course Fee</th>
+      <th>Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (student of students; track student) {
+      <tr>
+        <td>{{ student.name | uppercase }}</td>
+        <td>{{ student.dob | date:'fullDate' }}</td>
+        <td>{{ student.fee | currency:'INR' }}</td>
+        <td>{{ student.marks | number:'1.2-2' }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<div class="reversed-names-container">
+    <h2>Reversed Names</h2>
+    @for (student of students; track student.name) {
+      <p>{{ student.name | p1 }}</p>
+    }
+  </div>
+<div class="card">
+    <p class="card-title">Transformed Title: {{ title | uppercase | slice:0:10 }}</p>
+  </div>
+  

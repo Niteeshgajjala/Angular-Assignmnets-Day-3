@@ -1,0 +1,10 @@
+@for (product of products; track product) {
+    <li>
+      <strong>{{ product.name }}</strong> - ₹{{ product.price }}
+      <button (click)="toggleDetails(products.indexOf(product))">Toggle Details</button>
+      @if (product.showDetails) {
+        <p>Details: {{ product.details }}</p>
+      }
+    </li>
+  }
+  

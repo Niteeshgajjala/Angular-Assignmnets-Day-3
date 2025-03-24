@@ -1,0 +1,38 @@
+<form (ngSubmit)="onsubmit()" class="student-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input [(ngModel)]="formData.name" id="name" name="name" required />
+      <div class="error-message">Please enter a name.</div>
+    </div>
+  
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select [(ngModel)]="formData.gender" id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <div class="error-message">Please select a gender.</div>
+    </div>
+  
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input [(ngModel)]="formData.dob" id="dob" name="dob" type="date" required />
+      <div class="error-message">Please select a date of birth.</div>
+    </div>
+  
+    <div class="form-group">
+      <label for="percentage">Percentage:</label>
+      <input [(ngModel)]="formData.percentage" id="percentage" name="percentage" type="number" required />
+      <div class="error-message">Please enter a percentage.</div>
+    </div>
+  
+    <div class="form-group">
+      <label for="fee">Fee:</label>
+      <input [(ngModel)]="formData.fees" id="fee" name="fee" type="number" required/>
+      <div class="error-message">Please enter the fee.</div>
+    </div>
+  
+    <button type="submit" class="submit-btn">Add Student</button>
+  </form>
+  

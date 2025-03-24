@@ -1,0 +1,40 @@
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Percentage</th>
+            <th>DOB</th>
+            <th>Fees</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (student of students; track student.id) {
+            @if (student.percentage > 50) {
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.gender }}</td>
+                <td>{{ student.percentage }}</td>
+                <td>{{ student.dob }}</td>
+                <td>{{ student.fees }}</td>
+                <td>
+                    <button class="edit-btn" (click)="onEdit(student)">Edit</button>
+                    <button class="delete-btn" (click)="onDelete(student)">Delete</button>
+                </td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<app-stu-form (addstudent)="onAddStudent($event)"></app-stu-form>
+
+@if (selectstudent) {
+    <app-stu-detail [student]="selectstudent"
+        (update)="onUpdate($event)"
+        (cancel)="onCancelEdit()">
+    </app-stu-detail>
+}

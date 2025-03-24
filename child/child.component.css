@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  strong {
+    color: #34495e;
+    font-weight: bold;
+  }
+  

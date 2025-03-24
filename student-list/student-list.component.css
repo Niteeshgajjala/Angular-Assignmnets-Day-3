@@ -1,0 +1,100 @@
+.student-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.styled-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+
+.styled-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.styled-table th {
+  text-transform: uppercase;
+}
+
+.styled-table td {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.reversed-names-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.reversed-names-container h2 {
+  color: #007bff;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.reversed-names-container p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.reversed-names-container p:hover {
+  background: #ddd;
+  transform: scale(1.05);
+}
+.card {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
